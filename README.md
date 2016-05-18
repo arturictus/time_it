@@ -22,7 +22,36 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+**#at**
+Any instance of time will respond to `at`
+
+```ruby
+# this is the regular at in Time class
+time = Time.at(1463529600)
+  # => 2016-05-18 02:00:00 +0200
+
+# This is the extension
+time.at(hour: 12)
+  # => 2016-05-18 12:00:00 +0200
+time.at(hour: 12, min: 40)
+  # => 2016-05-18 12:40:00 +0200
+
+# original instance is not modified
+time
+  # => 2016-05-18 02:00:00 +0200
+```
+**#to_h**
+Any instance of time will respond to `to_h`
+
+```ruby
+# this is the regular at in Time class
+time = Time.at(1463529600)
+  # => 2016-05-18 02:00:00 +0200
+
+# This is the extension
+time.to_h
+  # => {:sec=>0, :min=>0, :hour=>2, :day=>18, :month=>5, :year=>2016, :wday=>3, :yday=>139, :isdst=>true, :zone=>"CEST"}
+```
 
 ## Development
 
@@ -33,4 +62,3 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/time_it.
-
