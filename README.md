@@ -22,6 +22,16 @@ Or install it yourself as:
 
 **#at**
 
+arguments:
+
+- `year`
+- `month`
+- `day`
+- `hour`
+- `min`
+- `sec`
+- `utc_offset`
+
 ```ruby
 # this is the regular at in Time class
 time = Time.at(1463529600)
