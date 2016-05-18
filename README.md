@@ -1,8 +1,6 @@
 # TimeIt
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/time_it`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Helpers and extensions to improve working with Time.
 
 ## Installation
 
@@ -23,7 +21,6 @@ Or install it yourself as:
 ## Usage
 
 **#at**
-Any instance of time will respond to `at`
 
 ```ruby
 # this is the regular at in Time class
@@ -41,7 +38,6 @@ time
   # => 2016-05-18 02:00:00 +0200
 ```
 **#to_h**
-Any instance of time will respond to `to_h`
 
 ```ruby
 # this is the regular at in Time class
